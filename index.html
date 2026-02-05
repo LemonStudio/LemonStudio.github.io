@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青柠工作室LemonStudio - FUNK音乐分享</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 页面背景与整体布局 */
+        body {
+            background-color: #f0f9e8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* 头像样式 */
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 6px solid #7ccd7c;
+            margin: 40px 0 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 名字样式 */
+        .name {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #32cd32;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* B站链接样式 */
+        .bilibili-link {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .bilibili-link a {
+            color: #fb7299; /* B站粉色 */
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .bilibili-link a:hover {
+            border-bottom: 2px solid #fb7299;
+            color: #e06088;
+        }
+
+        /* 简介样式 */
+        .intro {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            margin-top: 20px;
+        }
+
+        .intro h2 {
+            color: #32cd32;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .intro p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .avatar {
+                width: 140px;
+                height: 140px;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .intro {
+                padding: 20px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头像区域 -->
+    <div class="avatar">
+        <img src="your-avatar.png" alt="青柠工作室LemonStudio头像">
+        <!-- 注意：请将 your-avatar.png 替换为你的头像图片实际路径（本地路径或网络链接） -->
+    </div>
+
+    <!-- 名字区域 -->
+    <div class="name">青柠工作室LemonStudio</div>
+
+    <!-- B站链接区域 -->
+    <div class="bilibili-link">
+        bilibili：<a href="https://space.bilibili.com/3493280679463823?spm_id_from=333.1007.0.0" target="_blank">青柠工作室LemonStudio</a>
+        <!-- target="_blank" 表示新标签页打开链接，提升用户体验 -->
+    </div>
+
+    <!-- 个人简介区域 -->
+    <div class="intro">
+        <h2>关于我</h2>
+        <p>大家好！我是青柠工作室LemonStudio，一名专注于FUNK音乐分享的UP主🎵。在这里我会持续分享优质的FUNK音乐作品、创作心得以及音乐背后的故事，希望能和所有喜欢FUNK音乐的朋友们一起交流、成长！</p>
+    </div>
+</body>
+</html>
